@@ -12,7 +12,7 @@ namespace Repository
     {
         public Context(DbContextOptions<Context> options)
             : base(options) { }
-        public DbSet<Cliente> Cliente { get; set; }
+        public DbSet<Aluno> Cliente { get; set; }
         public DbSet<Funcionario> Funcionario { get; set; }
         public DbSet<ItemEmprestimo> ItemEmprestimo { get; set; }
         public DbSet<Livro> Livro { get; set; }

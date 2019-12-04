@@ -43,3 +43,8 @@ C:\Users\Diego\source\repos\WebLivraria\WebLivraria\obj\Debug\netcoreapp2.1\Razo
 C:\Users\Diego\source\repos\WebLivraria\WebLivraria\obj\Debug\netcoreapp2.1\Razor\Views\Livro\Detalhes.cshtml.g.cs
 C:\Users\Diego\source\repos\WebLivraria\WebLivraria\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\Alterar.cshtml.g.cs
 C:\Users\Diego\source\repos\WebLivraria\WebLivraria\obj\Debug\netcoreapp2.1\Razor\Views\Livro\Alterar.cshtml.g.cs
+C:\Users\Diego\source\repos\WebLivraria\WebLivraria\obj\Debug\netcoreapp2.1\Razor\Views\Aluno\Create.cshtml.g.cs
+C:\Users\Diego\source\repos\WebLivraria\WebLivraria\obj\Debug\netcoreapp2.1\Razor\Views\Aluno\Delete.cshtml.g.cs
+C:\Users\Diego\source\repos\WebLivraria\WebLivraria\obj\Debug\netcoreapp2.1\Razor\Views\Aluno\Details.cshtml.g.cs
+C:\Users\Diego\source\repos\WebLivraria\WebLivraria\obj\Debug\netcoreapp2.1\Razor\Views\Aluno\Edit.cshtml.g.cs
+C:\Users\Diego\source\repos\WebLivraria\WebLivraria\obj\Debug\netcoreapp2.1\Razor\Views\Aluno\Index.cshtml.g.cs

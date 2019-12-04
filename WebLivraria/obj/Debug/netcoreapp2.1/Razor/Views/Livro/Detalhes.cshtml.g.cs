@@ -179,7 +179,7 @@ WriteAttributeValue("", 1128, Model.LinkImagem, 1128, 19, false);
             WriteLiteral(" />\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(1198, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "64cd0c4683a4479d8470f2a2ffcf62fb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1c2249eb1b114ce2b8cb57e1f28b40b6", async() => {
                 BeginContext(1247, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -214,7 +214,7 @@ WriteAttributeValue("", 1128, Model.LinkImagem, 1128, 19, false);
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(1263, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5f2ac6f9e7b04958a92c4c5f9e861a36", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "188606af3eb5453cba20684b8f86d424", async() => {
                 BeginContext(1285, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

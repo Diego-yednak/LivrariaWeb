@@ -4,10 +4,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entity
 {
-    [Table("Cliente")]
-    public class Cliente
+    [Table("Aluno")]
+    public class Aluno
     {
-        public Cliente()
+        public Aluno()
         {
             CriadoEm = DateTime.Now;
         }

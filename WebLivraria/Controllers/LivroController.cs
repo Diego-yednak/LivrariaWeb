@@ -52,12 +52,20 @@ namespace WebLivraria.Controllers
                 // Newtonsoft.Json
                 dto = JsonConvert.
                     DeserializeObject<LivroDto>(resultado);
-                l.Nome = dto.items[0].volumeInfo.title;
-                l.Autor = dto.items[0].volumeInfo.authors[0];
-                l.Prefacio = dto.items[0].volumeInfo.description;
-                l.Categoria = dto.items[0].volumeInfo.categories[0];
-                l.DataPublicacao = Convert.ToDateTime(dto.items[0].volumeInfo.publishedDate);
-                l.LinkImagem = dto.items[0].volumeInfo.imageLinks.smallThumbnail;
+
+                try
+                {
+                    l.Nome = dto.items[0].volumeInfo.title;
+                    l.Autor = dto.items[0].volumeInfo.authors[0];
+                    l.Prefacio = dto.items[0].volumeInfo.description;
+                    l.Categoria = dto.items[0].volumeInfo.categories[0];
+                    l.DataPublicacao = Convert.ToDateTime(dto.items[0].volumeInfo.publishedDate);
+                    l.LinkImagem = dto.items[0].volumeInfo.imageLinks.smallThumbnail;
+                } catch(Exception e)
+                {
+                    View(l);
+                }
+
             }
             
             return View(l);
