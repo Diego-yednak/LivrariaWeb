@@ -1,0 +1,25 @@
+﻿@model List<Livro>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bem Vindo</h1>
+    <p>Lista de <a asp-action="Index" asp-controller="Livro">Livros</a> para locação.</p>
+
+    <div class="row" id="Produtos">
+        @foreach (Livro item in Model)
+        {
+        <div class="col-md-3" style="text-align:center; margin-bottom:15px">
+            <a asp-action="Detalhes" asp-controller="Home" asp-route-id="@item.Id">
+                <img src="@item.LinkImagem" alt="@item.Prefacio"
+                     style="width:200px;height:180px" class="img-thumbnail" /><br />
+            </a>
+            <a asp-action="Detalhes" asp-controller="Livro" asp-route-id="@item.Id">
+                @item.Nome
+            </a><br />
+            <b>Autor: </b> @item.Autor<br />
+        </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,8 @@
+C:\Users\Diego\source\repos\WebLivraria\Entity\obj\Debug\netcoreapp3.0\Entity.csprojAssemblyReference.cache
+C:\Users\Diego\source\repos\WebLivraria\Entity\obj\Debug\netcoreapp3.0\Entity.AssemblyInfoInputs.cache
+C:\Users\Diego\source\repos\WebLivraria\Entity\obj\Debug\netcoreapp3.0\Entity.AssemblyInfo.cs
+C:\Users\Diego\source\repos\WebLivraria\Entity\bin\Debug\netcoreapp3.0\Entity.deps.json
+C:\Users\Diego\source\repos\WebLivraria\Entity\bin\Debug\netcoreapp3.0\Entity.dll
+C:\Users\Diego\source\repos\WebLivraria\Entity\bin\Debug\netcoreapp3.0\Entity.pdb
+C:\Users\Diego\source\repos\WebLivraria\Entity\obj\Debug\netcoreapp3.0\Entity.dll
+C:\Users\Diego\source\repos\WebLivraria\Entity\obj\Debug\netcoreapp3.0\Entity.pdb

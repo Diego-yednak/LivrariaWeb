@@ -1,0 +1,67 @@
+﻿@model Livro
+
+<form asp-action="Cadastrar" method="post"
+      enctype="multipart/form-data">
+    <fieldset>
+        <legend>Cadastrar Livro</legend>
+        <div asp-validation-summary="ModelOnly"
+             class="text-primary"></div>
+        <div class="form-group" id="Nome">
+            <label asp-for="Nome"></label>
+            <input type="text" class="form-control"
+                   asp-for="Nome" />
+            <span asp-validation-for="Nome"
+                  class="text-primary"></span>
+        </div>
+
+        <input type="submit"
+               class="btn btn-info" style="margin-bottom: 5px;"
+               value="Buscar"
+               asp-action="BuscarInfoLivro"
+               asp-controller="Livro" />
+
+        <div class="form-group" id="Categoria">
+            <label asp-for="Categoria"></label>
+            <input type="text" class="form-control"
+                   asp-for="Categoria" />
+            <span asp-validation-for="Categoria"
+                  class="text-primary"></span>
+        </div>
+        <div class="form-group" id="Autor">
+            <label asp-for="Autor"></label>
+            <input type="text" class="form-control"
+                   asp-for="Autor" />
+            <span asp-validation-for="Autor"
+                  class="text-primary"></span>
+        </div>
+        <div class="form-group" id="DataPublicacao">
+            <label asp-for="DataPublicacao"></label>
+            <input type="text"
+                   class="form-control"
+                   asp-for="DataPublicacao" />
+            <span asp-validation-for="DataPublicacao"
+                  class="text-primary"></span>
+        </div>
+
+        <div class="form-group" id="Prefacio">
+            <label asp-for="Prefacio"></label>
+            <input type="text"
+                   class="form-control"
+                   asp-for="Prefacio" />
+            <span asp-validation-for="Prefacio"
+                  class="text-primary"></span>
+        </div>
+
+        <div class="form-group" id="LinkImagem">
+            <label asp-for="LinkImagem">Imagem:</label><br />
+            <input type="text"
+                   class="form-control"
+                   asp-for="LinkImagem" nome="LinkImagem" hidden/>
+            <img name="LinkImagem" src="@(Model.LinkImagem)" />
+        </div>
+
+        <input type="submit"
+               class="btn btn-success"
+               value="Cadastrar" />
+    </fieldset>
+</form>
