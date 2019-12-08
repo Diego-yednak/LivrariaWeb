@@ -9,3 +9,14 @@ C:\Users\Diego\source\repos\WebLivraria\Repository\obj\Debug\netcoreapp2.1\Repos
 C:\Users\Diego\source\repos\WebLivraria\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
 C:\Users\Diego\source\repos\WebLivraria\Repository\obj\Debug\netcoreapp2.1\Repository.dll
 C:\Users\Diego\source\repos\WebLivraria\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Repository\bin\Debug\netcoreapp2.1\Repository.deps.json
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Repository\bin\Debug\netcoreapp2.1\Repository.dll
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Repository\bin\Debug\netcoreapp2.1\Entity.dll
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Repository\bin\Debug\netcoreapp2.1\Entity.pdb
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.csprojAssemblyReference.cache
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.dll
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
