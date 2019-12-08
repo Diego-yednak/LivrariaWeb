@@ -14,3 +14,11 @@ C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Entity\obj\D
 C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Entity\obj\Debug\netcoreapp2.1\Entity.AssemblyInfo.cs
 C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Entity\obj\Debug\netcoreapp2.1\Entity.dll
 C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Entity\obj\Debug\netcoreapp2.1\Entity.pdb
+C:\projetos\c#\LivrariaWeb\Entity\bin\Debug\netcoreapp2.1\Entity.deps.json
+C:\projetos\c#\LivrariaWeb\Entity\bin\Debug\netcoreapp2.1\Entity.dll
+C:\projetos\c#\LivrariaWeb\Entity\bin\Debug\netcoreapp2.1\Entity.pdb
+C:\projetos\c#\LivrariaWeb\Entity\obj\Debug\netcoreapp2.1\Entity.csprojAssemblyReference.cache
+C:\projetos\c#\LivrariaWeb\Entity\obj\Debug\netcoreapp2.1\Entity.AssemblyInfoInputs.cache
+C:\projetos\c#\LivrariaWeb\Entity\obj\Debug\netcoreapp2.1\Entity.AssemblyInfo.cs
+C:\projetos\c#\LivrariaWeb\Entity\obj\Debug\netcoreapp2.1\Entity.dll
+C:\projetos\c#\LivrariaWeb\Entity\obj\Debug\netcoreapp2.1\Entity.pdb

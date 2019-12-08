@@ -13,16 +13,18 @@ namespace WebLivraria.Controllers
     public class AlunoController : Controller
     {
         private readonly Context _context;
+        private readonly AlunoDao _alunoDao;
 
-        public AlunoController(Context context)
+        public AlunoController(Context context, AlunoDao alunoDao)
         {
             _context = context;
+            _alunoDao = alunoDao;
         }
 
         // GET: Aluno
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            return View(await _context.Cliente.ToListAsync());
+            return View(_alunoDao.ListarTodos());
         }
 
         // GET: Aluno/Details/5

@@ -16,5 +16,6 @@ namespace Repository
         public DbSet<Funcionario> Funcionario { get; set; }
         public DbSet<ItemEmprestimo> ItemEmprestimo { get; set; }
         public DbSet<Livro> Livro { get; set; }
+        public DbSet<Aluno> Aluno { get; set; }
     }
 }

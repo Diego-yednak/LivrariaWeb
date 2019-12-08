@@ -20,3 +20,14 @@ C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Repository\o
 C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
 C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.dll
 C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
+C:\projetos\c#\LivrariaWeb\Repository\bin\Debug\netcoreapp2.1\Repository.deps.json
+C:\projetos\c#\LivrariaWeb\Repository\bin\Debug\netcoreapp2.1\Repository.dll
+C:\projetos\c#\LivrariaWeb\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
+C:\projetos\c#\LivrariaWeb\Repository\bin\Debug\netcoreapp2.1\Entity.dll
+C:\projetos\c#\LivrariaWeb\Repository\bin\Debug\netcoreapp2.1\Entity.pdb
+C:\projetos\c#\LivrariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.csprojAssemblyReference.cache
+C:\projetos\c#\LivrariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+C:\projetos\c#\LivrariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
+C:\projetos\c#\LivrariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
+C:\projetos\c#\LivrariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.dll
+C:\projetos\c#\LivrariaWeb\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
