@@ -13,16 +13,13 @@ Adicionar todos os arquivos para enviar para o repositÃ³rio remoto
 Depois de adicionar os arquivos Ã© necessÃ¡rio fazer um commit
  - git commit -m "blabla"
  
-Criar uma conta no git e um repositÃ³rio
- - git remote add origin https://github.com/dideconto/teste.git
- 
-Enviar os arquivos para o repositÃ³rio
+Enviar os arquivos para o repositório
  - git push -u origin master
  
-Clonar repositÃ³rio remoto
- - $ git clone https://github.com/dideconto/teste.git
+Clonar repositório remoto
+ - $ git clone https://github.com/Diego-yednak/LivrariaWeb.git
  
-Requisitar novas atualizaÃ§Ãµes do projeto
+Requisitar novas atualizações do projeto
  - git pull
  
 Remover credenciais
