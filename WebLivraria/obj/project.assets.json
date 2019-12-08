@@ -12573,11 +12573,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\WebLivraria\\WebLivraria.csproj",
+      "projectUniqueName": "C:\\projetos\\c#\\LivrariaWeb\\WebLivraria\\WebLivraria.csproj",
       "projectName": "WebLivraria",
-      "projectPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\WebLivraria\\WebLivraria.csproj",
+      "projectPath": "C:\\projetos\\c#\\LivrariaWeb\\WebLivraria\\WebLivraria.csproj",
       "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\WebLivraria\\obj\\",
+      "outputPath": "C:\\projetos\\c#\\LivrariaWeb\\WebLivraria\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12596,11 +12596,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\Entity.csproj"
+            "C:\\projetos\\c#\\LivrariaWeb\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\projetos\\c#\\LivrariaWeb\\Entity\\Entity.csproj"
             },
-            "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Repository\\Repository.csproj"
+            "C:\\projetos\\c#\\LivrariaWeb\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\projetos\\c#\\LivrariaWeb\\Repository\\Repository.csproj"
             }
           }
         }

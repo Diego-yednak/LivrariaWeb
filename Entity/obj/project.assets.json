@@ -4088,11 +4088,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\Entity.csproj",
+      "projectUniqueName": "C:\\projetos\\c#\\LivrariaWeb\\Entity\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\Entity.csproj",
+      "projectPath": "C:\\projetos\\c#\\LivrariaWeb\\Entity\\Entity.csproj",
       "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\obj\\",
+      "outputPath": "C:\\projetos\\c#\\LivrariaWeb\\Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
