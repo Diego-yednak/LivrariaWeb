@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Diego\\source\\repos\\WebLivraria\\WebLivraria\\WebLivraria.csproj": {}
+    "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\WebLivraria\\WebLivraria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\Entity.csproj": {
+    "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\Entity.csproj",
+        "projectUniqueName": "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\Entity.csproj",
-        "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\obj\\",
+        "projectPath": "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Entity\\Entity.csproj",
+        "packagesPath": "C:\\Users\\rafab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Entity\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rafab\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,24 +59,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Repository\\Repository.csproj": {
+    "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\rafab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rafab\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,8 +86,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\Entity.csproj"
+              "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Entity\\Entity.csproj"
               }
             }
           }
@@ -128,24 +122,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Diego\\source\\repos\\WebLivraria\\WebLivraria\\WebLivraria.csproj": {
+    "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\WebLivraria\\WebLivraria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\WebLivraria\\WebLivraria.csproj",
+        "projectUniqueName": "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\WebLivraria\\WebLivraria.csproj",
         "projectName": "WebLivraria",
-        "projectPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\WebLivraria\\WebLivraria.csproj",
-        "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\WebLivraria\\obj\\",
+        "projectPath": "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\WebLivraria\\WebLivraria.csproj",
+        "packagesPath": "C:\\Users\\rafab\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\WebLivraria\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rafab\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -158,11 +149,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\Entity.csproj": {
-                "projectPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\Entity.csproj"
+              "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Entity\\Entity.csproj": {
+                "projectPath": "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Entity\\Entity.csproj"
               },
-              "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Repository\\Repository.csproj"
+              "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Repository\\Repository.csproj"
               }
             }
           }
@@ -203,7 +194,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

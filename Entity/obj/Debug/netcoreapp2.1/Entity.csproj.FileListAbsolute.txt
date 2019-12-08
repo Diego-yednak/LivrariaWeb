@@ -6,3 +6,11 @@ C:\Users\Diego\source\repos\WebLivraria\Entity\obj\Debug\netcoreapp2.1\Entity.As
 C:\Users\Diego\source\repos\WebLivraria\Entity\obj\Debug\netcoreapp2.1\Entity.dll
 C:\Users\Diego\source\repos\WebLivraria\Entity\obj\Debug\netcoreapp2.1\Entity.pdb
 C:\Users\Diego\source\repos\WebLivraria\Entity\obj\Debug\netcoreapp2.1\Entity.csprojAssemblyReference.cache
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Entity\bin\Debug\netcoreapp2.1\Entity.deps.json
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Entity\bin\Debug\netcoreapp2.1\Entity.dll
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Entity\bin\Debug\netcoreapp2.1\Entity.pdb
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Entity\obj\Debug\netcoreapp2.1\Entity.csprojAssemblyReference.cache
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Entity\obj\Debug\netcoreapp2.1\Entity.AssemblyInfoInputs.cache
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Entity\obj\Debug\netcoreapp2.1\Entity.AssemblyInfo.cs
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Entity\obj\Debug\netcoreapp2.1\Entity.dll
+C:\Users\rafab\OneDrive\Área de Trabalho\Programação\LivrariaWeb\Entity\obj\Debug\netcoreapp2.1\Entity.pdb

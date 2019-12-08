@@ -4082,23 +4082,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Diego\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\rafab\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\Entity.csproj",
+      "projectUniqueName": "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Entity\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\Entity.csproj",
-      "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Diego\\source\\repos\\WebLivraria\\Entity\\obj\\",
+      "projectPath": "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Entity\\Entity.csproj",
+      "packagesPath": "C:\\Users\\rafab\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rafab\\OneDrive\\Área de Trabalho\\Programação\\LivrariaWeb\\Entity\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rafab\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4143,7 +4139,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
