@@ -147,6 +147,8 @@ namespace Repository.Migrations
 
                     b.Property<string>("Prefacio");
 
+                    b.Property<string>("LinkImagem");
+
                     b.HasKey("Id");
 
                     b.ToTable("Livro");
