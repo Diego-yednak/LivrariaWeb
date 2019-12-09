@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Entity;
 using Repository;
+using WebLivraria.Models;
 
 namespace WebLivraria.Controllers
 {
@@ -153,22 +154,40 @@ namespace WebLivraria.Controllers
         }
 
         [HttpPost]
-        public IActionResult AdicionarLivro(int Id, int idLivro)
+        // public IActionResult AdicionarLivro(int IdUsuario, int idLivro)
+        public IActionResult AdicionarLivro(EmprestimoDto emprestimoDto)
         {
+            string urlAnterior = Request.Headers["Referer"].ToString();
             // int id = 8; // FUNCIONARIO TESTE
             int idFuncionario = 1;
-            Livro livroEmprestimo = _livroDAO.BuscarPorId(idLivro);
+            Livro livroEmprestimo = _livroDAO.BuscarPorId(emprestimoDto.IdLivro);
             if(livroEmprestimo != null)
             {
                 ItemEmprestimo itemEmprestimo = new ItemEmprestimo();
                 itemEmprestimo.Livro = livroEmprestimo;
-                itemEmprestimo.Aluno = _alunoDao.BuscarPorId(Id);
+                itemEmprestimo.Aluno = _alunoDao.BuscarPorId(emprestimoDto.IdAluno);
                 itemEmprestimo.Funcionario = _funcionarioDAO.BuscarPorId(idFuncionario);
                 
                 _itemEmprestimoDao.Cadastrar(itemEmprestimo);
             }
             // livrosParaEmprestar.Add(livroEmprestimo);
-            return RedirectToAction(nameof(Details), "Aluno" , new { Id } );
+            // return RedirectToAction(nameof(Details), "Aluno" , new { emprestimoDto.IdAluno } );
+            return Redirect(urlAnterior);
+        }
+
+        public IActionResult Devolucao(int id)
+        {
+            string urlAnterior = Request.Headers["Referer"].ToString();
+
+            ItemEmprestimo itemEmprestimo = _itemEmprestimoDao.BuscarPorId(id);
+            if(itemEmprestimo != null)
+            {
+                itemEmprestimo.DataDevolucao = DateTime.Now;
+                _itemEmprestimoDao.Atualizar(itemEmprestimo);
+            }
+            
+            // var teste = Response.Redirect(Request.UrlReferrer.ToString());
+            return Redirect(urlAnterior);
         }
     }
 }

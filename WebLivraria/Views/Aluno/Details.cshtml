@@ -43,19 +43,30 @@
 <h2>Empréstimo</h2>
 
 <form asp-action="AdicionarLivro">
-    <input type="hidden" asp-for="Id" />
-    <div class="form-group" id="Categorias">
-        <label>Livros Disponíveis</label>
-        <select asp-items="@ViewBag.todosLivros"
-                class="form-control"
-                name="idLivro">
-            <option> -- SELECIONE -- </option>
-        </select>
-        <br />
-        <div class="form-group">
-            <input type="submit" value="Salvar" class="btn btn-default" />
+    <div class="row">
+        <div class="col-md-4">
+            <input type="hidden" asp-for="Id" name="IdAluno" />
+            <div class="form-group" id="Categorias">
+                <label>Livros Disponíveis</label>
+                <select asp-items="@ViewBag.todosLivros"
+                        class="form-control"
+                        name="idLivro">
+                    <option> -- SELECIONE -- </option>
+                </select>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="control-label">Data Prevista</label>
+                <input type="date" name="DataPrevista" class="form-control" />
+            </div>
         </div>
     </div>
+    <div class="form-group">
+        <input type="submit" value="Adicionar" class="btn btn-info" />
+    </div>
+
 </form>
 
 <table class="table table-hover table-striped"
@@ -66,6 +77,7 @@
             <th>Livro</th>
             <th>Locatario</th>
             <th>Data Devolução</th>
+            <th>Status</th>
         </tr>
     </thead>
     <tbody>
@@ -76,6 +88,10 @@
             <td>@itemEmprestimo.Livro.Nome</td>
             <td>@itemEmprestimo.Funcionario.Nome</td>
             <td>@itemEmprestimo.DataDevolucao</td>
+            <td>
+                <a asp-action="Devolucao" asp-route-id="@itemEmprestimo.Id">Devolver</a>
+            </td>
+            
         </tr>
         }
         </tbody>

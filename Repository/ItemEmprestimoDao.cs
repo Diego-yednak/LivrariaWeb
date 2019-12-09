@@ -42,7 +42,14 @@ namespace Repository
                 ItemEmprestimo.
                 Include(x => x.Livro).
                 Include(x => x.Funcionario).
-                Where(x => x.Aluno.Id == id).ToList();
+                Where(x => x.Aluno.Id == id &&
+                       x.DataDevolucao == new DateTime()
+                ).ToList();
+        }
+        public void Atualizar(ItemEmprestimo i)
+        {
+            _context.Update(i);
+            _context.SaveChanges();
         }
     }
 }
