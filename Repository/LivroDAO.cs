@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-
+using Microsoft.EntityFrameworkCore;
 
 namespace Repository
 {
@@ -42,6 +42,7 @@ namespace Repository
             return _context.Livro.
                 ToList();
         }
+
         public void Excluir(int id)
         {
             _context.Remove(BuscarPorId(id));

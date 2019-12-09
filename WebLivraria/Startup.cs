@@ -33,6 +33,7 @@ namespace WebLivraria
             services.AddScoped<LivroDAO>();
             services.AddScoped<FuncionarioDAO>();
             services.AddScoped<AlunoDao>();
+            services.AddScoped<ItemEmprestimoDao>();
             services.AddDbContext<Context>
                 (options => options.UseSqlServer    
                 (Configuration.GetConnectionString("LivrariaConnection")));

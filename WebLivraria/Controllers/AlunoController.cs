@@ -12,13 +12,20 @@ namespace WebLivraria.Controllers
 {
     public class AlunoController : Controller
     {
-        private readonly Context _context;
         private readonly AlunoDao _alunoDao;
+        private readonly LivroDAO _livroDAO;
+        private readonly ItemEmprestimoDao _itemEmprestimoDao;
+        private readonly FuncionarioDAO _funcionarioDAO;
 
-        public AlunoController(Context context, AlunoDao alunoDao)
+        public AlunoController(AlunoDao alunoDao, 
+            LivroDAO livroDAO,
+            ItemEmprestimoDao itemEmprestimoDao,
+            FuncionarioDAO funcionarioDao)
         {
-            _context = context;
+            _livroDAO = livroDAO;
             _alunoDao = alunoDao;
+            _itemEmprestimoDao = itemEmprestimoDao;
+            _funcionarioDAO = funcionarioDao;
         }
 
         // GET: Aluno
@@ -28,15 +35,15 @@ namespace WebLivraria.Controllers
         }
 
         // GET: Aluno/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public IActionResult Details(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
 
-            var aluno = await _context.Cliente
-                .FirstOrDefaultAsync(m => m.Id == id);
+            ViewBag.itemEmprestimo = _itemEmprestimoDao.ListarPorIdAluno(id);
+            ViewBag.todosLivros =
+                                new SelectList(_livroDAO.ListarTodos(),
+                "Id", "Nome");
+
+            Aluno aluno = _alunoDao.BuscarPorId(id);
             if (aluno == null)
             {
                 return NotFound();
@@ -56,26 +63,24 @@ namespace WebLivraria.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Matricula,CriadoEm")] Aluno aluno)
+        public IActionResult Create(Aluno a)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(aluno);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                if(_alunoDao.Cadastrar(a))
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                
             }
-            return View(aluno);
+            return View(a);
         }
 
         // GET: Aluno/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public IActionResult Edit(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
 
-            var aluno = await _context.Cliente.FindAsync(id);
+            Aluno aluno = _alunoDao.BuscarPorId(id);
             if (aluno == null)
             {
                 return NotFound();
@@ -88,7 +93,7 @@ namespace WebLivraria.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Matricula,CriadoEm")] Aluno aluno)
+        public IActionResult Edit(int id, [Bind("Id,Nome,Matricula,CriadoEm")] Aluno aluno)
         {
             if (id != aluno.Id)
             {
@@ -99,8 +104,7 @@ namespace WebLivraria.Controllers
             {
                 try
                 {
-                    _context.Update(aluno);
-                    await _context.SaveChangesAsync();
+                    _alunoDao.Atualizar(aluno);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -119,15 +123,9 @@ namespace WebLivraria.Controllers
         }
 
         // GET: Aluno/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public IActionResult Delete(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var aluno = await _context.Cliente
-                .FirstOrDefaultAsync(m => m.Id == id);
+            Aluno aluno = _alunoDao.BuscarPorId(id);
             if (aluno == null)
             {
                 return NotFound();
@@ -139,17 +137,38 @@ namespace WebLivraria.Controllers
         // POST: Aluno/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public IActionResult DeleteConfirmed(int id)
         {
-            var aluno = await _context.Cliente.FindAsync(id);
-            _context.Cliente.Remove(aluno);
-            await _context.SaveChangesAsync();
+            _alunoDao.Excluir(id);
             return RedirectToAction(nameof(Index));
         }
 
         private bool AlunoExists(int id)
         {
-            return _context.Cliente.Any(e => e.Id == id);
+            Aluno a = _alunoDao.BuscarPorId(id);
+            if (a != null)
+                return true;
+            else
+                return false;
+        }
+
+        [HttpPost]
+        public IActionResult AdicionarLivro(int Id, int idLivro)
+        {
+            // int id = 8; // FUNCIONARIO TESTE
+            int idFuncionario = 1;
+            Livro livroEmprestimo = _livroDAO.BuscarPorId(idLivro);
+            if(livroEmprestimo != null)
+            {
+                ItemEmprestimo itemEmprestimo = new ItemEmprestimo();
+                itemEmprestimo.Livro = livroEmprestimo;
+                itemEmprestimo.Aluno = _alunoDao.BuscarPorId(Id);
+                itemEmprestimo.Funcionario = _funcionarioDAO.BuscarPorId(idFuncionario);
+                
+                _itemEmprestimoDao.Cadastrar(itemEmprestimo);
+            }
+            // livrosParaEmprestar.Add(livroEmprestimo);
+            return RedirectToAction(nameof(Details), "Aluno" , new { Id } );
         }
     }
 }

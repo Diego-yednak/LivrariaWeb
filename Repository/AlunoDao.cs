@@ -16,17 +16,34 @@ namespace Repository
 
         public Aluno BuscarPorId(int id)
         {
-            throw new NotImplementedException();
+            return _context.Aluno.Find(id);
         }
 
-        public bool Cadastrar(Aluno objeto)
+        public bool Cadastrar(Aluno a)
         {
-            throw new NotImplementedException();
+            if (BuscarPorId(a.Id) == null)
+            {
+                _context.Aluno.Add(a);
+                _context.SaveChanges();
+                return true;
+            }
+            return false;
         }
 
         public List<Aluno> ListarTodos()
         {
             return _context.Aluno.ToList();
+        }
+
+        public void Atualizar(Aluno a)
+        {
+            _context.Update(a);
+            _context.SaveChanges();
+        }
+        public void Excluir(int id)
+        {
+            _context.Remove(BuscarPorId(id));
+            _context.SaveChanges();
         }
     }
 }

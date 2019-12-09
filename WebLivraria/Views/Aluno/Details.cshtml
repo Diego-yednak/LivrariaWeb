@@ -4,6 +4,10 @@
     ViewData["Title"] = "Details";
 }
 
+@{
+    List<ItemEmprestimo> itemEmprestimos = ViewBag.itemEmprestimo;
+}
+
 <h2>Detalhes</h2>
 
 <div>
@@ -34,3 +38,45 @@
     <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
     <a asp-action="Index">Voltar para a Lista</a>
 </div>
+
+<hr />
+<h2>Empréstimo</h2>
+
+<form asp-action="AdicionarLivro">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group" id="Categorias">
+        <label>Livros Disponíveis</label>
+        <select asp-items="@ViewBag.todosLivros"
+                class="form-control"
+                name="idLivro">
+            <option> -- SELECIONE -- </option>
+        </select>
+        <br />
+        <div class="form-group">
+            <input type="submit" value="Salvar" class="btn btn-default" />
+        </div>
+    </div>
+</form>
+
+<table class="table table-hover table-striped"
+        style="margin-top:15px;margin-bottom:15px">
+    <thead>
+        <tr>
+            <th>Data Emprestimo</th>
+            <th>Livro</th>
+            <th>Locatario</th>
+            <th>Data Devolução</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (ItemEmprestimo itemEmprestimo in itemEmprestimos)
+        {
+        <tr>
+            <td>@itemEmprestimo.CriadoEm</td>
+            <td>@itemEmprestimo.Livro.Nome</td>
+            <td>@itemEmprestimo.Funcionario.Nome</td>
+            <td>@itemEmprestimo.DataDevolucao</td>
+        </tr>
+        }
+        </tbody>
+</table>
