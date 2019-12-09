@@ -68,7 +68,7 @@ using Entity;
             WriteLiteral("\r\n<div class=\"text-center\">\r\n    <h1 class=\"display-4\">Bem Vindo - bla bla</h1>\r\n    <p>Lista de ");
             EndContext();
             BeginContext(162, 55, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30eeaf2d891a4bfda7a1e1e8aca6df85", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef496377c52844d08f294a14d0f2172d", async() => {
                 BeginContext(207, 6, true);
                 WriteLiteral("Livros");
                 EndContext();
@@ -101,7 +101,7 @@ using Entity;
             WriteLiteral("        <div class=\"col-md-3\" style=\"text-align:center; margin-bottom:15px\">\r\n            ");
             EndContext();
             BeginContext(419, 241, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f26d569f9503434bbe2554f2418a7998", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f535064466c74d4bb5e46f08d2da21d9", async() => {
                 BeginContext(490, 22, true);
                 WriteLiteral("\r\n                <img");
                 EndContext();
@@ -155,7 +155,7 @@ WriteAttributeValue("", 541, item.Prefacio, 541, 14, false);
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(674, 118, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b83316c76810496e88c4a12fbc0de773", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c57139a8a94b4120a3b910f3206d134f", async() => {
                 BeginContext(746, 18, true);
                 WriteLiteral("\r\n                ");
                 EndContext();
