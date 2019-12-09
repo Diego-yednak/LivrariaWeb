@@ -48,7 +48,7 @@ namespace Repository.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Cliente",
+                name: "Aluno",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -59,7 +59,7 @@ namespace Repository.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Cliente", x => x.Id);
+                    table.PrimaryKey("PK_Aluno", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -289,7 +289,7 @@ namespace Repository.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Cliente");
+                name: "Aluno");
 
             migrationBuilder.DropTable(
                 name: "Funcionario");
