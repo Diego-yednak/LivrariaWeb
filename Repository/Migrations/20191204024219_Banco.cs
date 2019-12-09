@@ -213,7 +213,9 @@ namespace Repository.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     LivroId = table.Column<int>(nullable: true),
                     Quantidade = table.Column<int>(nullable: false),
-                    CriadoEm = table.Column<DateTime>(nullable: false)
+                    CriadoEm = table.Column<DateTime>(nullable: false),
+                    DataPrevista = table.Column<DateTime>(nullable: false),
+                    Multa = table.Column<double>(nullable: false)
                 },
                 constraints: table =>
                 {

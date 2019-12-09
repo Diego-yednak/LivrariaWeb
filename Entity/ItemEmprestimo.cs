@@ -20,5 +20,7 @@ namespace Entity
         public DateTime CriadoEm { get; set; }
         public DateTime DataDevolucao { get; set; }
         public DateTime DataPrevista { get; set; }
+        public double Multa { get; set; }
+
     }
 }
