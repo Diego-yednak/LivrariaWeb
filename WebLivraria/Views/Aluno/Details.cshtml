@@ -76,7 +76,7 @@
             <th>Data Emprestimo</th>
             <th>Livro</th>
             <th>Locatario</th>
-            <th>Data Devolução</th>
+            <th>Data Prevista</th>
             <th>Status</th>
         </tr>
     </thead>
@@ -87,7 +87,7 @@
             <td>@itemEmprestimo.CriadoEm</td>
             <td>@itemEmprestimo.Livro.Nome</td>
             <td>@itemEmprestimo.Funcionario.Nome</td>
-            <td>@itemEmprestimo.DataDevolucao</td>
+            <td>@itemEmprestimo.DataPrevista</td>
             <td>
                 <a asp-action="Devolucao" asp-route-id="@itemEmprestimo.Id">Devolver</a>
             </td>

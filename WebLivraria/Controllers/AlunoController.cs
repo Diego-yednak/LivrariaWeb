@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using Entity;
 using Repository;
 using WebLivraria.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebLivraria.Controllers
 {
@@ -17,12 +19,18 @@ namespace WebLivraria.Controllers
         private readonly LivroDAO _livroDAO;
         private readonly ItemEmprestimoDao _itemEmprestimoDao;
         private readonly FuncionarioDAO _funcionarioDAO;
+        private readonly SignInManager<FuncionarioLogado> _signInManager;
+        private readonly UserManager<FuncionarioLogado> _userManager;
 
         public AlunoController(AlunoDao alunoDao, 
             LivroDAO livroDAO,
             ItemEmprestimoDao itemEmprestimoDao,
-            FuncionarioDAO funcionarioDao)
+            FuncionarioDAO funcionarioDao,
+            SignInManager<FuncionarioLogado> signInManager,
+            UserManager<FuncionarioLogado> userManager)
         {
+            _userManager = userManager;
+            _signInManager = signInManager;
             _livroDAO = livroDAO;
             _alunoDao = alunoDao;
             _itemEmprestimoDao = itemEmprestimoDao;
@@ -35,6 +43,7 @@ namespace WebLivraria.Controllers
             return View(_alunoDao.ListarTodos());
         }
 
+        [Authorize]
         // GET: Aluno/Details/5
         public IActionResult Details(int id)
         {
@@ -164,6 +173,7 @@ namespace WebLivraria.Controllers
             if(livroEmprestimo != null)
             {
                 ItemEmprestimo itemEmprestimo = new ItemEmprestimo();
+                itemEmprestimo.DataPrevista = emprestimoDto.DataPrevista;
                 itemEmprestimo.Livro = livroEmprestimo;
                 itemEmprestimo.Aluno = _alunoDao.BuscarPorId(emprestimoDto.IdAluno);
                 itemEmprestimo.Funcionario = _funcionarioDAO.BuscarPorId(idFuncionario);
@@ -180,12 +190,19 @@ namespace WebLivraria.Controllers
             string urlAnterior = Request.Headers["Referer"].ToString();
 
             ItemEmprestimo itemEmprestimo = _itemEmprestimoDao.BuscarPorId(id);
-            if(itemEmprestimo != null)
-            {
-                itemEmprestimo.DataDevolucao = DateTime.Now;
-                _itemEmprestimoDao.Atualizar(itemEmprestimo);
+            if (_signInManager.IsSignedIn(User)) {
+                string email = _userManager.GetUserName(User);
+                Funcionario funcionarioEmail = new Funcionario();
+                funcionarioEmail.Email = email;
+                Funcionario funcionario = _funcionarioDAO.BuscarPorEmail(funcionarioEmail);
+                if (itemEmprestimo != null)
+                {
+                    itemEmprestimo.DataDevolucao = DateTime.Now;
+                    _itemEmprestimoDao.Atualizar(itemEmprestimo);
+                }
+
             }
-            
+
             // var teste = Response.Redirect(Request.UrlReferrer.ToString());
             return Redirect(urlAnterior);
         }
