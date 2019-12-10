@@ -78,6 +78,7 @@
             <th>Locatario</th>
             <th>Data Prevista</th>
             <th>Status</th>
+            <th>Multa</th>
         </tr>
     </thead>
     <tbody>
@@ -91,7 +92,8 @@
             <td>
                 <a asp-action="Devolucao" asp-route-id="@itemEmprestimo.Id">Devolver</a>
             </td>
-            
+            <td>@itemEmprestimo.Multa</td>
+
         </tr>
         }
         </tbody>

@@ -48,7 +48,16 @@ namespace WebLivraria.Controllers
         public IActionResult Details(int id)
         {
 
-            ViewBag.itemEmprestimo = _itemEmprestimoDao.ListarPorIdAluno(id);
+            List<ItemEmprestimo> itemEmprestimo = _itemEmprestimoDao.ListarPorIdAluno(id);
+            foreach (ItemEmprestimo i in itemEmprestimo)
+            {
+                if(i.DataPrevista < DateTime.Now)
+                {
+                    i.Multa = 4.0;
+                }
+            }
+
+            ViewBag.itemEmprestimo = itemEmprestimo;
             ViewBag.todosLivros =
                                 new SelectList(_livroDAO.ListarTodos(),
                 "Id", "Nome");
@@ -103,13 +112,8 @@ namespace WebLivraria.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("Id,Nome,Matricula,CriadoEm")] Aluno aluno)
+        public IActionResult Edit(Aluno aluno)
         {
-            if (id != aluno.Id)
-            {
-                return NotFound();
-            }
-
             if (ModelState.IsValid)
             {
                 try

@@ -69,7 +69,7 @@ using Entity;
             WriteLiteral("\r\n<h2>Funcionários</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(136, 49, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aaba797c31e34c62b1c11d9f84d448fa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3058303624064dea9acd0fe192e4f2b5", async() => {
                 BeginContext(159, 22, true);
                 WriteLiteral("Criar novo funcionário");
                 EndContext();
@@ -229,7 +229,7 @@ using Entity;
             WriteLiteral("\">Edit</a>\r\n    -->\r\n                |\r\n                ");
             EndContext();
             BeginContext(1671, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cecd0addd133418f93d90d749d5f76af", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dab6361498ad40f1bf61623e566c9263", async() => {
                 BeginContext(1719, 7, true);
                 WriteLiteral("Details");
                 EndContext();
