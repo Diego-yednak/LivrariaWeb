@@ -4082,23 +4082,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Diego\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\rafael\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projetos\\c#\\LivrariaWeb\\Entity\\Entity.csproj",
+      "projectUniqueName": "C:\\Users\\rafael\\Desktop\\LivrariaWeb7\\LivrariaWeb\\Entity\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "C:\\projetos\\c#\\LivrariaWeb\\Entity\\Entity.csproj",
-      "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-      "outputPath": "C:\\projetos\\c#\\LivrariaWeb\\Entity\\obj\\",
+      "projectPath": "C:\\Users\\rafael\\Desktop\\LivrariaWeb7\\LivrariaWeb\\Entity\\Entity.csproj",
+      "packagesPath": "C:\\Users\\rafael\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rafael\\Desktop\\LivrariaWeb7\\LivrariaWeb\\Entity\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rafael\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4143,7 +4139,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
